@@ -20,6 +20,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ClientService } from './services/client.service';
+import { AuthService } from './services/auth.service';
 import { FormsModule } from '@angular/forms';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { FlashMessagesService } from 'angular2-flash-messages/module/flash-messages.service';
@@ -61,7 +62,8 @@ const appRoutes: Routes = [
     AngularFireDatabase,
     AngularFireDatabaseModule,
     ClientService,
-    FlashMessagesService
+    FlashMessagesService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
